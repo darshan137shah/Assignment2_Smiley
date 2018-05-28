@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+}
+
+body {
+  height: 100vh;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  display: flex;
+  align-items: center;
+}
+
+.main-face {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  background: #CAC531;
+  background: -webkit-linear-gradient(to bottom, #efe, #ffff00);
+  background: linear-gradient(to bottom, #efe, #ffff00);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #000;
+  position: relative;
+}
+
+.eye1, .eye2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  border-radius: 50%;
+  border: 25px solid #fff;
+  box-shadow: 0 0 10px #000;
+  top: 28%;
+}
+
+.eye1 {
+  float: left;
+  left: 28%;
+}
+
+.eye2 {
+  float: right;
+  right: 28%;
+}
+
+.smile {
+  display: block;
+  position: relative;
+  width: 70%;
+  height: 220px;
+  margin: 0 auto;
+  top: 40%;
+  border-bottom: 10px solid #000;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-style:groove;
+}
+
+.left-smile, .right-smile {
+  position: relative;
+  width: 25px;
+  height: 50px;
+  top: 28%;
+  border-bottom: 1px solid;
+  border-radius: 30px;
+  border-width: thick;
+}
+
+.left-smile {
+  left: -13%;
+  transform: rotate(-15deg);
+}
+
+.right-smile {
+  float: right;
+  right: -13%;
+  transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: #fff;
+  }
+
+  .main-face {
+    width: auto;
+    height: auto;
+  }
+}
